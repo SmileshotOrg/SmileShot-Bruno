@@ -1,0 +1,23 @@
+meta {
+  name: http://localhost:5075/Practice
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5075/Practice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "postcode": "hp79qh",
+    "name": "bucks",
+    "phoneNumber": "123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

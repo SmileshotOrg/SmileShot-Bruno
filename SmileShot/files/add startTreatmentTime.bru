@@ -1,0 +1,21 @@
+meta {
+  name: add startTreatmentTime
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:5001/api/files/startTreatmentTime/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "datetime": "2025-08-25T18:37:00"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

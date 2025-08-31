@@ -1,0 +1,19 @@
+meta {
+  name: Get closest practices
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:5075/Practice?postcode=hp79qh
+  body: none
+  auth: inherit
+}
+
+params:query {
+  postcode: hp79qh
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: verify-otp
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5001/api/auth/verify-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { "email": "ben.divsalar@gmail.com", "otp": "321331" }
+}
+
+settings {
+  encodeUrl: true
+}

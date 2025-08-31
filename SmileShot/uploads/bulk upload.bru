@@ -1,0 +1,20 @@
+meta {
+  name: bulk upload
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5001/api/files/upload/bulk
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  files: @file()
+  url: /testseparator/
+}
+
+settings {
+  encodeUrl: true
+}

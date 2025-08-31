@@ -1,0 +1,27 @@
+meta {
+  name: http://localhost:5075/Practice Copy
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://polite-clowns-tell.loca.lt/Practice?post
+  body: json
+  auth: inherit
+}
+
+params:query {
+  post: null
+}
+
+body:json {
+  {
+    "postcode": "hp79qh",
+    "name": "bucks",
+    "phoneNumber": "123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
