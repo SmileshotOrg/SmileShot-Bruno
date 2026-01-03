@@ -1,0 +1,16 @@
+meta {
+  name: Get practices
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{api-gateway-url}}/api/files/practices
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

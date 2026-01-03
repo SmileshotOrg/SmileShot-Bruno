@@ -1,0 +1,124 @@
+meta {
+  name: Add daylist
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/daylist/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "daylistDate": "2025-06-30",
+    "practiceName": "Dental Beauty Bow",
+    "appointments": [
+      {
+        "index": 1,
+        "time": "2025-06-30T09:00:00",
+        "title": "Mr",
+        "firstName": "Carl",
+        "lastName": "Davies",
+        "patientId": "8f3d7e58-b1f2-4751-aa6f-79bb194be9ee",
+        "phone": "07717223086",
+        "dateOfBirth": "1963-09-16",
+        "treatment": "Extraction, Posterior Composite Filling c2c"
+      },
+      {
+        "index": 2,
+        "time": "2025-06-30T10:30:00",
+        "title": "Miss",
+        "firstName": "Siaojing",
+        "lastName": "Liu",
+        "patientId": "b8de83a5-19e4-4ba5-ba1f-482f7657112d",
+        "phone": "07825156006",
+        "dateOfBirth": "1996-10-26",
+        "treatment": "Exam"
+      },
+      {
+        "index": 3,
+        "time": "2025-06-30T11:00:00",
+        "title": "Mr",
+        "firstName": "Aiden",
+        "lastName": "Locke",
+        "patientId": "82396ff6-97f8-47c2-ae14-3e39060e81ea",
+        "phone": "07760195431",
+        "dateOfBirth": "1965-12-27",
+        "treatment": "New Patient Exam"
+      },
+      {
+        "index": 4,
+        "time": "2025-06-30T11:30:00",
+        "title": "Mr",
+        "firstName": "Gabriel",
+        "lastName": "Neave",
+        "patientId": "481c8545-460e-4d9e-afc0-4a0a9ae85c27",
+        "phone": "07761725197",
+        "dateOfBirth": "1995-11-17",
+        "treatment": "Emergency"
+      },
+      {
+        "index": 5,
+        "time": "2025-06-30T12:10:00",
+        "title": "Ms",
+        "firstName": "Marley",
+        "lastName": "philp",
+        "patientId": "0d6f449f-4b9a-4f80-bbea-a121b27f5a6f",
+        "phone": "07562226252",
+        "dateOfBirth": "2010-01-07",
+        "treatment": "Child Exam"
+      },
+      {
+        "index": 6,
+        "time": "2025-06-30T12:50:00",
+        "title": "Mr",
+        "firstName": "Nick",
+        "lastName": "Aitchison",
+        "patientId": "e501080b-616a-4f42-83f9-ede9d160e0bb",
+        "phone": "07568380686",
+        "dateOfBirth": "1992-07-12",
+        "treatment": "Exam"
+      },
+      {
+        "index": 7,
+        "time": "2025-06-30T14:00:00",
+        "title": "Mr",
+        "firstName": "Graham",
+        "lastName": "Smith",
+        "patientId": "aace64e1-587b-4320-8f35-0be9f620f0a3",
+        "phone": "07795023352",
+        "dateOfBirth": "1984-02-05",
+        "treatment": "Posterior Composite Filling"
+      },
+      {
+        "index": 8,
+        "time": "2025-06-30T15:30:00",
+        "title": "Mr",
+        "firstName": "Chris",
+        "lastName": "Newman-Day",
+        "patientId": "5a1e4ded-392e-4c65-97a2-3b204019a0ba",
+        "phone": "07921505744",
+        "dateOfBirth": "1981-10-18",
+        "treatment": "Exam"
+      },
+      {
+        "index": 9,
+        "time": "2025-06-30T15:30:00",
+        "title": "Mrs",
+        "firstName": "Setsuko",
+        "lastName": "Rix",
+        "patientId": "773433c6-7fea-4e00-820a-bb9efa8d114d",
+        "phone": "07814627778",
+        "dateOfBirth": "1995-09-18",
+        "treatment": "Emax Crown Fit, Goodwill Discount, Anterior Composite Filling"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

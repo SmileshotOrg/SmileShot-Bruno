@@ -1,0 +1,21 @@
+meta {
+  name: Uplad daylist image
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/daylist/uploadImage
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(C:\Source\kingslab\daylist_example_2.jpeg)
+  practiceName: test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

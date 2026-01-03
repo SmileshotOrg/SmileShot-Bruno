@@ -1,0 +1,27 @@
+meta {
+  name: Create patient
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/patients
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Mr",
+    "practiceName": "test",
+    "firstName": "test", 
+    "lastName": "textFamiliy",
+    "dateOfBirth": "1966-09-29",
+    "phone": "822882"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

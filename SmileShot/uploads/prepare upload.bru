@@ -1,0 +1,41 @@
+meta {
+  name: prepare upload
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/upload/prepare
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "basePath": "/Apps/Smileshot Backend/",
+    "files": 
+    [
+        {
+          "name": "DSC00330.jpeg",
+          "creationDate": "2025-12-16T12:50:00"
+        }
+    ]
+  }
+}
+
+body:multipart-form {
+  url: /testseparator/
+  metadata: '''
+    [
+      {
+        "name": "DSC00330.jpeg",
+        "creationDate": "2025-12-16T18:47:00"
+      }
+    ]
+  '''
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: getPatientName
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{api-gateway-url}}/api/files/daylist/getPatientName?datetime=2025-06-30T18:36:33
+  body: none
+  auth: inherit
+}
+
+params:query {
+  datetime: 2025-06-30T18:36:33
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

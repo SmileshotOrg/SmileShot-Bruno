@@ -1,0 +1,22 @@
+meta {
+  name: Create user practice
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/practices/userPractice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "practiceName": "test"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

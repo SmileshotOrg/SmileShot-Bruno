@@ -1,0 +1,21 @@
+meta {
+  name: startTreatmentTime List
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api-gateway-url}}/api/files/startTreatmentTime/list?daylistDate=2025-06-29
+  body: none
+  auth: inherit
+}
+
+params:query {
+  daylistDate: 2025-06-29
+  ~practiceName: Dental Beauty Bow
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

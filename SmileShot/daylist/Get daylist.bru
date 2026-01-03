@@ -5,15 +5,16 @@ meta {
 }
 
 get {
-  url: http://localhost:5001/api/files/daylist/get?datetime=2025-08-25
+  url: {{api-gateway-url}}/api/files/daylist/get?datetime=2025-08-26
   body: none
   auth: inherit
 }
 
 params:query {
-  datetime: 2025-08-25
+  datetime: 2025-08-26
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -1,0 +1,20 @@
+meta {
+  name: Get daylist dates
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api-gateway-url}}/api/files/daylist/getdates?year=2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  year: 2025
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

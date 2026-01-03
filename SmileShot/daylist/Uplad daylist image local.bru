@@ -1,0 +1,20 @@
+meta {
+  name: Uplad daylist image local
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8000/api/files/daylist/uploadImage
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(C:\Source\kingslab\day_example_1.jpeg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

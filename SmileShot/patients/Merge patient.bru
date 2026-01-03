@@ -1,0 +1,23 @@
+meta {
+  name: Merge patient
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{api-gateway-url}}/api/files/patients/merge
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "targetPatientId": "242ac569-d72b-433e-aacd-92aa2592081c", 
+    "sourcePatientId": "242ac569-d72b-433e-aacd-92aa2592081c"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

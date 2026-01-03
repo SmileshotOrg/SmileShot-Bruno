@@ -1,0 +1,16 @@
+meta {
+  name: getRecentUploads
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{api-gateway-url}}/api/files/upload/recentUploads
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
